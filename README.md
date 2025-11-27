@@ -1,10 +1,11 @@
 # SQL_Online_Bookstore
 SQL database for an online bookstore with schema, queries and KPIs.
+
 **Project type:** SQL / Database project  
 **Description:** A relational database for an online bookstore that stores information about books, customers, and orders. The schema enforces referential integrity and supports common e-commerce queries.
 
 ## Files
-- `Books.csv` - book_id (PK), title, author, price, stock, publisher, category
+- `C:\Users\punee\OneDrive\Desktop\bookstore_sql\Books.csv` - book_id (PK), title, author, price, stock, publisher, category
 - `Customers.csv` - customer_id (PK), name, email, phone, address, city, state, zip
 - `Orders.csv` - order_id (PK), order_date, customer_id (FK -> Customers.customer_id), book_id (FK -> Books.book_id), quantity, total_price, status
 
@@ -63,7 +64,7 @@ SELECT book_id, title, stock FROM Books WHERE stock < 5;
 ```
 
 ## How to run / test locally
-1. If you have CSV files, import them into your SQL engine (SQLite example using sqlite3 CLI):
+1. If you have CSV files, import them into your SQL engine:
 ```bash
 sqlite3 bookstore.db
 .mode csv
@@ -73,11 +74,6 @@ sqlite3 bookstore.db
 ```
 2. Run the example queries above.
 
-## How to upload this project to GitHub
-See `UPLOAD_INSTRUCTIONS.md` (also included below) for step-by-step instructions.
 
----
 
-## Notes
-- Adjust data types and constraints according to your target DBMS (MySQL, PostgreSQL, SQLite).
-- If orders can contain multiple books, consider splitting `Orders` into `Orders` and `OrderItems` where `OrderItems` lists book_id and quantity per order.
+
