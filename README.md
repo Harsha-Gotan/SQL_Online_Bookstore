@@ -7,12 +7,12 @@ A comprehensive relational database system for managing books, customers, and or
 
 ## 🏗️ Database Architecture
 Three interconnected tables:
-- BOOKS : Book details including Book_ID (Primary Key), Title, Author, Genre. Published_Year. Price, Stock
+- BOOKS : Book details including Book_ID (Primary Key), Title, Author, Genre, Published_Year, Price and Stock
    : <a href="https://github.com/Harsha-Gotan/SQL_Online_Bookstore/blob/main/Books.csv">BOOKS</a>
-- CUSTOMER: Customer information including Customer_ID (Primary Key)	, Name	, Email	, Phone	, City, Country
+- CUSTOMER: Customer information including Customer_ID (Primary Key), Name, Email, Phone, City and Country
    : <a href="https://github.com/Harsha-Gotan/SQL_Online_Bookstore/blob/main/Customers.csv">CUSTOMERS</a>
-- ORDERS: Order records linking books and customers with Order_Date	, Quantity and Total_Amount
-   : <a href="https://github.com/Harsha-Gotan/SQL_Online_Bookstore/blob/main/Orders.csv">CUSTOMERS</a>
+- ORDERS: Order records linking books and customers with Order_Date, Quantity and Total_Amount
+   : <a href="https://github.com/Harsha-Gotan/SQL_Online_Bookstore/blob/main/Orders.csv">ORDERS</a>
 
 ## ✅ Key Features
 - Database schema design
@@ -32,7 +32,7 @@ Three interconnected tables:
  10) Find the book with the lowest stock
  11) Calculate the total revenue generated from all orders
 
-   - Advance Queries
+   - AdvanceD Queries
  1) Retrieve the total number of books sold for each genre
  2) Find the average price of books in the "Fantasy" genre
  3) List customers who have placed at least 2 orders
@@ -59,7 +59,7 @@ Three interconnected tables:
 
 ## 🚀 How to Run
 1. Import the SQL schema into your SQL environment
-2. Run `INSERT` scripts to populate data
+2. Run <a href="https://github.com/Harsha-Gotan/SQL_Online_Bookstore/blob/main/ONLINE_BOOKSTORE%20QUERY.sql">sql_file</a> 
 3. Use provided queries to analyze the database
 
 
