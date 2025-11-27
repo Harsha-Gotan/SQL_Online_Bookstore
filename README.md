@@ -15,7 +15,7 @@ Three interconnected tables:
 - Database schema design
 - Data insertion scripts
 - Querying:
-   Basic Queries
+   - Basic Queries
  1) Retrieve all books in the "Fiction" genre
  2) Find books published after the year 1950
  3) List all customers from the Canada
@@ -28,7 +28,7 @@ Three interconnected tables:
  10) Find the book with the lowest stock
  11) Calculate the total revenue generated from all orders
 
-  Advance Queries
+   - Advance Queries
  1) Retrieve the total number of books sold for each genre
  2) Find the average price of books in the "Fantasy" genre
  3) List customers who have placed at least 2 orders
@@ -55,7 +55,7 @@ Three interconnected tables:
 
 ## 🚀 How to Run
 1. Import the SQL schema into your SQL environment
-2. Run `INSERT` scripts to populate sample data
+2. Run `INSERT` scripts to populate data
 3. Use provided queries to analyze the database
 
 
