@@ -32,7 +32,7 @@ Three interconnected tables:
  10) Find the book with the lowest stock
  11) Calculate the total revenue generated from all orders
 
-   - AdvanceD Queries
+   - Advanced Queries
  1) Retrieve the total number of books sold for each genre
  2) Find the average price of books in the "Fantasy" genre
  3) List customers who have placed at least 2 orders
@@ -41,7 +41,7 @@ Three interconnected tables:
  6) Retrieve the total quantity of books sold by each author
  7) List the cities where customers who spent over $30 are located
  8) Find the customer who spent the most on orders
- 9) Calculate the stock remaining after fulfilling all order
+ 9) Calculate the stock remaining after fulfilling all orders
   
 
 ## 🛠️ Technologies Used
