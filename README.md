@@ -1,78 +1,67 @@
 # SQL_Online_Bookstore
 SQL database for an online bookstore with schema, queries and KPIs.
 
-**Project type:** SQL / Database project  
-**Description:** A relational database for an online bookstore that stores information about books, customers, and orders. The schema enforces referential integrity and supports common e-commerce queries.
+📚 Online Bookstore SQL Project
 
-## Files
-- `C:\Users\punee\OneDrive\Desktop\bookstore_sql\Books.csv` - book_id (PK), title, author, price, stock, publisher, category
-- `Customers.csv` - customer_id (PK), name, email, phone, address, city, state, zip
-- `Orders.csv` - order_id (PK), order_date, customer_id (FK -> Customers.customer_id), book_id (FK -> Books.book_id), quantity, total_price, status
+A comprehensive relational database system for managing books, customers, and orders in an online bookstore.
 
-## ER Diagram
-See `ER_diagram.png` for a visual representation of the entities and relationships.
+## 🏗️ Database Architecture
+Three interconnected tables:
+- `Books.csv`: Book details including Book_ID (Primary Key), Title, Author, Genre. Published_Year. Price, Stock
+- `Customers.csv`: Customer information including Customer_ID (Primary Key)	, Name	, Email	, Phone	, City, Country
+- `Orders.csv`: Order records linking books and customers with Order_Date	, Quantity and Total_Amount
 
-## SQL Examples
-1. Create tables (example for SQLite / MySQL syntax):
-```sql
-CREATE TABLE Books (
-  book_id INTEGER PRIMARY KEY,
-  title TEXT NOT NULL,
-  author TEXT,
-  price DECIMAL(10,2),
-  stock INTEGER,
-  publisher TEXT,
-  category TEXT
-);
+## ✅ Key Features
+- Database schema design
+- Data insertion scripts
+- Querying:
+   Basic Queries
+ 1) Retrieve all books in the "Fiction" genre
+ 2) Find books published after the year 1950
+ 3) List all customers from the Canada
+ 4) Show orders placed in November 2023
+ 5) Retrieve the total stock of books available
+ 6) Find the details of the most expensive book
+ 7) Show all customers who ordered more than 1 quantity of a book
+ 8) Retrieve all orders where the total amount exceeds $20
+ 9) List all genres available in the Books table
+ 10) Find the book with the lowest stock
+ 11) Calculate the total revenue generated from all orders
 
-CREATE TABLE Customers (
-  customer_id INTEGER PRIMARY KEY,
-  name TEXT NOT NULL,
-  email TEXT UNIQUE,
-  phone TEXT,
-  address TEXT,
-  city TEXT,
-  state TEXT,
-  zip TEXT
-);
+  Advance Queries
+ 1) Retrieve the total number of books sold for each genre
+ 2) Find the average price of books in the "Fantasy" genre
+ 3) List customers who have placed at least 2 orders
+ 4) Find the most frequently ordered book
+ 5) Show the top 3 most expensive books of 'Fantasy' Genre 
+ 6) Retrieve the total quantity of books sold by each author
+ 7) List the cities where customers who spent over $30 are located
+ 8) Find the customer who spent the most on orders
+ 9) Calculate the stock remaining after fulfilling all order
+  
 
-CREATE TABLE Orders (
-  order_id INTEGER PRIMARY KEY,
-  order_date DATE,
-  customer_id INTEGER,
-  book_id INTEGER,
-  quantity INTEGER,
-  total_price DECIMAL(10,2),
-  status TEXT,
-  FOREIGN KEY (customer_id) REFERENCES Customers(customer_id),
-  FOREIGN KEY (book_id) REFERENCES Books(book_id)
-);
-```
+## 🛠️ Technologies Used
+- MySQL / PostgreSQL (compatible)
+- SQL queries: DDL, DML, and Joins
 
-2. Sample query — list all orders with customer name and book title:
-```sql
-SELECT o.order_id, o.order_date, c.name AS customer, b.title AS book, o.quantity, o.total_price
-FROM Orders o
-JOIN Customers c ON o.customer_id = c.customer_id
-JOIN Books b ON o.book_id = b.book_id
-ORDER BY o.order_date DESC;
-```
+## 📊 Key Insights
+- Total Books in Inventory: 500
+- Total Customers: 496
+- Revenue Generated: $75628
+- Average Order Value: $159.8
+- Top Genre Sales: Mystery 
+- Repeat Purchase Rate: 28.02%(approx.)
+- Inventory Turnover Rate: 0.22%(approx.)
 
-3. Inventory check (books with low stock):
-```sql
-SELECT book_id, title, stock FROM Books WHERE stock < 5;
-```
+## 🚀 How to Run
+1. Import the SQL schema into your SQL environment
+2. Run `INSERT` scripts to populate sample data
+3. Use provided queries to analyze the database
 
-## How to run / test locally
-1. If you have CSV files, import them into your SQL engine:
-```bash
-sqlite3 bookstore.db
-.mode csv
-.import Books.csv Books
-.import Customers.csv Customers
-.import Orders.csv Orders
-```
-2. Run the example queries above.
+
+
+
+
 
 
 
