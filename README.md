@@ -8,7 +8,7 @@ A comprehensive relational database system for managing books, customers, and or
 ## 🏗️ Database Architecture
 Three interconnected tables:
 - BOOKS : Book details including Book_ID (Primary Key), Title, Author, Genre. Published_Year. Price, Stock
-   <a href="https://github.com/Harsha-Gotan/SQL_Online_Bookstore/blob/main/Books.csv">
+- <a href="https://github.com/Harsha-Gotan/SQL_Online_Bookstore/blob/main/Books.csv">BOOKS</a>
 - `Customers.csv`: Customer information including Customer_ID (Primary Key)	, Name	, Email	, Phone	, City, Country
 - `Orders.csv`: Order records linking books and customers with Order_Date	, Quantity and Total_Amount
 
