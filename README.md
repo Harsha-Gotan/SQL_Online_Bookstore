@@ -62,6 +62,9 @@ Three interconnected tables:
 2. Run <a href="https://github.com/Harsha-Gotan/SQL_Online_Bookstore/blob/main/ONLINE_BOOKSTORE%20QUERY.sql">sql_file</a> 
 3. Use provided queries to analyze the database
 
+## CONCLUSION
+This SQL project built a relational database for an online bookstore, enabling efficient tracking of books, customers, and orders. Through structured queries and JOIN operations, it delivered insights into sales trends, customer behavior, and inventory management—demonstrating real-world applications in e-commerce analytics and decision-making.
+
 
 
 
